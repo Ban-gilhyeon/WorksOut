@@ -1,1 +1,9 @@
 rootProject.name = 'WorksOut'
+
+include(
+        "module-application",
+        "module-application:module-api",
+        "module-domain",
+        "module-infra",
+        "module-common"
+)
