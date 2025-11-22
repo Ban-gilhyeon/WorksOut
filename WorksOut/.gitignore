@@ -40,6 +40,7 @@ out/
 .kotlin
 
 *.yml
+
 # BUT GitHub Actions는 버전 관리 해야 함
 !.github/workflows/*.yml
 !docker-compose.yml
