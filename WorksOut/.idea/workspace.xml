@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b7a3c7dc-db7e-4932-b1ec-ba1262a61a70" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/module-api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/module-api/src/main/kotlin/worksout/com/moduleapi/ModuleApiApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/module-api/src/main/kotlin/worksout/com/moduleapi/UserApi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/module-api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-application/module-api/src/test/kotlin/worksout/com/moduleapi/ModuleApiApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-auth/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-auth/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-auth/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-auth/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-auth/src/test/kotlin/worksout/com/moduleauth/ModuleAuthApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/Constants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/exception/BaseErrorCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/exception/CustomException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/exception/DomainException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/exception/ErrorReason.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon/exception/GlobalException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-common/src/test/kotlin/worksout/com/modulecommon/ModuleCommonApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-domain/src/test/kotlin/worksout/com/moduledomain/ModuleDomainApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infra/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infra/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-infra/src/test/kotlin/worksout/com/moduleinfra/ModuleInfraApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-application">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-application/module-api">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-auth">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-common">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-domain">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/module-infra">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WorksOut" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WorksOut" type="f1a62948:ProjectNode" />
+                <item name="module-common" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WorksOut" type="f1a62948:ProjectNode" />
+                <item name="module-domain" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WorksOut" type="f1a62948:ProjectNode" />
+                <item name="module-infra" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="35FFLLOshkim5T4n0u0Z8H3NaHx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build WorksOut.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build module-api.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ModuleApiApplication (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ModuleApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feat#2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bangilhyeon/git/WorksOut/WorksOut/module-application/src/main/kotlin/worksout/com/moduleapplication&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module-application/src/main/kotlin/worksout/com/moduleapplication" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module-common/src/main/kotlin/worksout/com/modulecommon" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ModuleApiApplication (1)">
+    <configuration name="ModuleApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="WorksOut.module-application.module-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="worksout.com.moduleapi.ModuleApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModuleAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="module-auth.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="worksout.com.moduleauth.ModuleAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-84258761d1cc-intellij.indexing.shared.core-IU-243.28141.18" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.28141.18" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7a3c7dc-db7e-4932-b1ec-ba1262a61a70" name="Changes" comment="" />
+      <created>1762697855542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762697855542</updated>
+      <workItem from="1762697856517" duration="2729000" />
+      <workItem from="1762700597059" duration="3050000" />
+      <workItem from="1762706677143" duration="13545000" />
+      <workItem from="1763450920969" duration="16124000" />
+      <workItem from="1763810291883" duration="7033000" />
+      <workItem from="1763918552156" duration="1207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
