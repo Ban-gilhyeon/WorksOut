@@ -1,6 +1,9 @@
 name: WorksOut Docker CI/CD
 
 on:
+  pull_request:
+    branches:
+      - develop
   push:
     branches:
       - develop
@@ -37,18 +40,19 @@ jobs:
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
 
-    deploy:
-      needs: build_and_push
-      runs-on: ubuntu-latest
-      steps:
-        - name: Deploy to EC2
-          uses: appleboy/ssh-action@v0.1.8
-          with:
-            host: ${{ secrets.EC2_HOST }}
-            username: ubuntu
-            key: ${{ secrets.EC2_KEY }}
-            script: |
-              docker pull ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
-              docker stop worksout || true
-              docker rm worksout || true
-              docker run -d -p 8080:8080 --name worksout ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
+
+  deploy:
+    needs: build_and_push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
+            docker stop worksout || true
+            docker rm worksout || true
+            docker run -d -p 8080:8080 --name worksout ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
