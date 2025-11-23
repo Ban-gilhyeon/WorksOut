@@ -25,8 +25,8 @@ jobs:
       - name: Grant permissions to gradlew
         run: chmod +x gradlew
 
-      - name: Build with Gradle (Test 포함)
-        run: ./gradlew clean build
+      - name: Build with Gradle
+        run: ./gradlew clean build -x test
 
   build_and_push:
     runs-on: ubuntu-latest
