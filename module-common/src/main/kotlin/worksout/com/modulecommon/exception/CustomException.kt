@@ -1,9 +1,13 @@
 package worksout.com.modulecommon.exception
 
-abstract class CustomException(
-    val errorCode: BaseErrorCode,
-    private val sourceLayer: String? = null,
-):RuntimeException() {
+import javax.annotation.processing.Messager
 
-    val status: Int get() = errorCode.errorReason.status
+abstract class CustomException(
+    val errorType: BaseErrorType,
+    customMessage: String? = null
+): RuntimeException(customMessage ?: errorType.message) {
+    abstract fun readResolve(): Any
+
+    val status: Int
+        get() = errorType.status
 }
