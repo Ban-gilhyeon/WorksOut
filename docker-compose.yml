@@ -16,4 +16,3 @@ services:
     # 필요해지면 로그/파일 마운트도 이렇게 추가 가능
     # volumes:
     #   - ./logs:/app/logs
-    
