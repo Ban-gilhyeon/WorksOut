@@ -1,50 +1,23 @@
-name: WorksOut Docker CI/CD
+name: WorksOut CI
 
 on:
-  pull_request:
-    branches:
-      - develop   # PR → develop일 때 CI 실행
   push:
     branches:
-      - develop   # develop에 머지되면 CD 실행
+      - develop
 
 jobs:
-  ci:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Checkout Source
-        uses: actions/checkout@v3
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Grant permissions to gradlew
-        run: chmod +x gradlew
-
-      - name: Build with Gradle
-        run: ./gradlew clean build -x test
-
   build_and_push:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
     steps:
-      - name: Checkout Source
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 17
 
-      - name: Grant permissions to gradlew
-        run: chmod +x gradlew
-
-      - name: Build JAR
+      - name: Build
         run: ./gradlew clean build -x test
 
       - name: Login to DockerHub
@@ -53,25 +26,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest .
-
-      - name: Push Docker Image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
-
-  deploy:
-    needs: build_and_push
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-    steps:
-      - name: Deploy to EC2
-        uses: appleboy/ssh-action@v0.1.8
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
-          key: ${{ secrets.EC2_KEY }}
-          script: |
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
-            docker stop worksout || true
-            docker rm worksout || true
-            docker run -d -p 8080:8080 --name worksout ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
+      - name: Build and Push
+        run: |
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest .
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/worksout:latest
