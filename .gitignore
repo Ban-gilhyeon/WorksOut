@@ -41,6 +41,7 @@ out/
 
 # Ignore all YAML except workflows (GitHub Actions)
 *.yml
+
 !.github/workflows/*.yml
 !docker-compose.yml
 
